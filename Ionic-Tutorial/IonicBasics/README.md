@@ -48,8 +48,11 @@ Refer to the [Android Reference for Capacitor](https://capacitorjs.com/docs/andr
 **New Page Component (Custom Component Creation)**  
 ![Screenshot 4](./Images/img_4.jpg)
 
+## Notes: 
+You can also refer to the [Notes](https://github.com/PrathameshDhande22/Android-Development-Tutorial/tree/ionic/Ionic-Tutorial/Notes)
+
 ## Sample
 
 I have attached a sample of the Ionic app as a signed `.apk` file created through Android Studio. Give it a try!
 
-[Sample App]()
+[Sample App](https://github.com/PrathameshDhande22/Android-Development-Tutorial/releases/download/ionic/ionic-basics.apk)
