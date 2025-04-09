@@ -1,0 +1,19 @@
+<div class="box">
+  <h4>Alert Component</h4>
+  <div>
+    <ion-button id="inline-alert"> Inline Alert </ion-button>
+    <ion-alert
+      trigger="inline-alert"
+      header="Inline Alert"
+      subHeader="Inline Header subHeader"
+      message="Inline Alert Message"
+      [buttons]="alertbuttons"
+      (didDismiss)="actionperformed($event)"
+      [backdropDismiss]="false"
+    >
+    </ion-alert>
+  </div>
+  <div>
+    <ion-button (click)="createAlert()"> Call Controller Alert </ion-button>
+  </div>
+</div>

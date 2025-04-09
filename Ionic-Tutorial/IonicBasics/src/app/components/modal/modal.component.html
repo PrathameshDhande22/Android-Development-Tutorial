@@ -1,0 +1,65 @@
+<div class="box">
+  <h4>Modal Component</h4>
+
+  <!-- simple modal -->
+  <div>
+    <ion-button color="success" (click)="openModal()" expand="block">
+      Click To Open Modal
+    </ion-button>
+    <ion-modal [isOpen]="isModalOpen">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <ion-buttons slot="end">
+              <ion-button [strong]="true" (click)="isModalOpen = false"
+                >Confirm</ion-button
+              >
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          numquam facere suscipit iste perferendis. Velit, consequatur
+          accusantium accusamus quae voluptates vel possimus nisi fugit. Dolore
+          obcaecati tenetur quas earum omnis.
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+  <!-- sheet modal -->
+  <div>
+    <ion-button color="warning" id="sheet-modal" expand="block">
+      Click To Open Sheet Modal
+    </ion-button>
+    <ion-modal
+      class="sheet-modal"
+      trigger="sheet-modal"
+      [initialBreakpoint]="0.5"
+      [breakpoints]="[0, 0.5, 0.75, 0.95]"
+      [backdropBreakpoint]="0.1"
+      [backdropDismiss]="false"
+    >
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Sheet Modal</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsa
+            vel inventore iure magni impedit fugiat. Eos fuga in quam eligendi,
+            ipsam eum, dolorem id earum hic reiciendis quos praesentium.
+          </div>
+
+          <ion-buttons class="ion-float-right ion-padding-top">
+            <ion-button fill="outline" color="danger"> Cancel </ion-button>
+            <ion-button color="primary" fill="solid"> Confirm </ion-button>
+          </ion-buttons>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+</div>

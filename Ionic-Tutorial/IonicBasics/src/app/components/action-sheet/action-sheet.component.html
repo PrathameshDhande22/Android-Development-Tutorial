@@ -1,0 +1,24 @@
+<div class="box">
+  <h4>Action Sheet Component</h4>
+  These is the Action Sheet Tutorial
+
+  <!-- displaying the ionic button -->
+  <ion-button id="ionic-button"> Open </ion-button>
+
+  <!-- Displaying the ionic action sheet -->
+  <ion-action-sheet
+    aria-hidden="false"
+    class="action-sheet-box"
+    [buttons]="actionsheetButtons"
+    header="Action"
+    trigger="ionic-button"
+    [backdropDismiss]="false"
+    [htmlAttributes]="{
+      'data-action': 'actionsheet'
+    }"
+    (didDismiss)="onDismiss($event)"
+  >
+  </ion-action-sheet>
+
+  <div>Action Performed : {{ actionperformed }}</div>
+</div>

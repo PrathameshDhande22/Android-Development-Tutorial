@@ -1,0 +1,32 @@
+<ion-menu contentId="main-content" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Navigation</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon name="close" size="large"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in velit
+      quas deleniti iusto cumque animi ad sed repellat hic modi non, tenetur
+      asperiores?
+    </div>
+    <ion-list>
+      <ion-list-header> Navigate </ion-list-header>
+      <ion-item routerLink="detail">
+        <ion-label>Detail </ion-label>
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-item>
+      <ion-item routerLink="/">
+        <ion-label>Home</ion-label>
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

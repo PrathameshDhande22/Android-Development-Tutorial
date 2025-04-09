@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>More About Mobile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="box">
+    <h4>ClipBoard Capacitor Plugin</h4>
+    <ion-input
+      label="Enter Some Data"
+      placeholder="Enter Your name"
+      fill="outline"
+      inputmode="text"
+      labelPlacement="start"
+      #name
+    ></ion-input>
+    <ion-button (click)="copyToClipBoard(name)" expand="block">
+      Copy To Clip Board
+      <ion-icon name="clipboard"></ion-icon>
+    </ion-button>
+    <ion-button (click)="getFromClipBoard()" expand="block" color="secondary">
+      Paste
+      <ion-icon name="clipboard"></ion-icon>
+    </ion-button>
+    <div #textbox id="text-box" class="ion-padding">Data:</div>
+  </div>
+</ion-content>

@@ -1,0 +1,51 @@
+<app-menus></app-menus>
+<div id="main-content" class="ion-page">
+  <ion-header id="header" [translucent]="true">
+    <ion-toolbar>
+      <ion-title> Home Page </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-menu-button></ion-menu-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button size="large" shape="round" color="danger" fill="solid" class="padding-xy-8" (click)="exitApp()">
+          <ion-icon name="exit-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [scrollEvents]="true">
+    <!-- ion fab bottom or top button -->
+    <ion-fab slot="fixed" vertical="start" horizontal="end" class="bottom-up">
+      <ion-fab-button size="small" type="button" (click)="navigateBottomUp()">
+        <ion-icon id="icon-up-down" [name]="'chevron-down-outline'"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <app-action-sheet> </app-action-sheet>
+    <app-accordion></app-accordion>
+    <app-alert></app-alert>
+    <app-badge></app-badge>
+    <app-inputs></app-inputs>
+    <app-simple></app-simple>
+    <app-modal></app-modal>
+
+
+
+    <!-- ion fab button -->
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button (click)="createToast('Document Created')">
+          <ion-icon name="document"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)="createToast('Creating Earth For You')">
+          <ion-icon name="globe"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </ion-content>
+</div>

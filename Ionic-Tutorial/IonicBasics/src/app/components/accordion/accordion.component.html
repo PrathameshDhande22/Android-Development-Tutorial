@@ -1,0 +1,24 @@
+<div class="box">
+  <h4>Accordion Component</h4>
+  <ion-accordion-group
+    (ionChange)="onAccordionChange($event)"
+    class="ionic-accordion"
+  >
+    <ion-accordion value="second" class="">
+      <ion-item slot="header" color="rose">
+        <ion-label> Item 1 </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content" style="color: green">
+        These is the Item 1 Accordion
+      </div>
+    </ion-accordion>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="rose">
+        <ion-label>First Accordion</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">First Content</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <div class="ion-margin-top">Active Accordion: {{ activeAccordion }}</div>
+</div>

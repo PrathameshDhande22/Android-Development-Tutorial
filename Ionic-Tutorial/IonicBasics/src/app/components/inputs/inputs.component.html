@@ -1,0 +1,43 @@
+<div class="box">
+  <h4>Inputs</h4>
+  <div>
+    <h5>Checkbox Component</h5>
+    <ion-checkbox value="true" justify="start">
+      You must agree to the terms and conditions
+    </ion-checkbox>
+  </div>
+
+  <div>
+    <h5>Picker Component</h5>
+    <ion-picker>
+      <ion-picker-column value="js" (ionChange)="whenColumnChange($event)" class="javascriptbox">
+        <ion-picker-column-option value="js"
+          >JavaScript</ion-picker-column-option
+        >
+        <ion-picker-column-option value="typescript"
+          >TypeScript</ion-picker-column-option
+        >
+        <ion-picker-column-option value="bun"> Bun </ion-picker-column-option>
+        <ion-picker-column-option value="nodejs"
+          >Node Js</ion-picker-column-option
+        >
+      </ion-picker-column>
+      <ion-picker-column value="py" (ionChange)="whenColumnChange($event)" class="pythonbox">
+        <ion-picker-column-option value="py">Python</ion-picker-column-option>
+        <ion-picker-column-option value="tkinter"
+          >Tkinter</ion-picker-column-option
+        >
+        <ion-picker-column-option value="scikitlearn"
+          >Scikit learn</ion-picker-column-option
+        >
+        <ion-picker-column-option value="fastapi"
+          >FastAPI</ion-picker-column-option
+        >
+      </ion-picker-column>
+    </ion-picker>
+    <br />
+    Selected From javaScript : {{ selectedjavascript }} <br />
+    Selected from python :
+    {{ selectedPython }}
+  </div>
+</div>
